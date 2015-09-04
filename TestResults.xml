@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\dev\blazey.specifications\tests\blazey.specifications.Tests\bin\Release\blazey.specifications.Tests.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-09-04" time="14:08:54">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8662" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\dev\blazey.specifications" machine-name="WIN-4PHR1SCF3A2" user="Edward Blackburn" user-domain="WIN-4PHR1SCF3A2" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\dev\blazey.specifications\tests\blazey.specifications.Tests\bin\Release\blazey.specifications.Tests.dll" executed="True" result="Success" success="True" time="0.072" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="blazey" executed="True" result="Success" success="True" time="0.064" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="specifications" executed="True" result="Success" success="True" time="0.064" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="Tests" executed="True" result="Success" success="True" time="0.063" asserts="0">
+                <results>
+                  <test-case name="blazey.specifications.Tests.hello returns 42" executed="True" result="Success" success="True" time="0.056" asserts="1" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
