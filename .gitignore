@@ -28,6 +28,7 @@ bld/
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
+TestResults.xml
 
 # NUNIT
 *.VisualState.xml
@@ -194,3 +195,4 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+TestResults.xml
