@@ -4,6 +4,7 @@
 
 #r @"packages/FAKE/tools/FakeLib.dll"
 open Fake
+open Fake.Testing
 open Fake.Git
 open Fake.AssemblyInfoFile
 open Fake.ReleaseNotesHelper
@@ -48,7 +49,7 @@ let tags = "unittesting testing specifications xunit mspec machine.specification
 let solutionFile  = "blazey.specifications.sln"
 
 // Pattern specifying assemblies to be tested using NUnit
-let testAssemblies = "tests/**/bin/Release/*Tests*.dll"
+let testAssemblies = "tests/**/bin/Release/*specs*.dll"
 
 // Git configuration (used for publishing documentation in gh-pages branch)
 // The profile where the project is posted
@@ -137,13 +138,11 @@ Target "Build" (fun _ ->
 
 Target "RunTests" (fun _ ->
     !! testAssemblies
-    |> NUnit (fun p ->
-        { p with
-            DisableShadowCopy = true
-            TimeOut = TimeSpan.FromMinutes 20.
-            OutputFile = "TestResults.xml" })
-)
-
+         |> xUnit (fun p -> 
+            {p with 
+                ToolPath = "./packages/xunit.runner.console/tools/xunit.console.exe";
+                ShadowCopy = false; })
+                )
 #if MONO
 #else
 // --------------------------------------------------------------------------------------

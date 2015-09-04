@@ -1,6 +1,7 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{63297B98-5CED-492C-A5B7-A5B4F73CF142}"
 	ProjectSection(SolutionItems) = preProject
 		paket.dependencies = paket.dependencies
@@ -8,8 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{63297B
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{A6A6AF7D-D6E3-442D-9B1E-58CC91879BE1}"
-EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "blazey.specifications", "src\blazey.specifications\blazey.specifications.fsproj", "{F048B0A6-CEDE-40F4-B47F-F42BC5C11169}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project", "project", "{BF60BC93-E09B-4E5F-9D85-95A519479D54}"
 	ProjectSection(SolutionItems) = preProject
@@ -32,7 +31,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{8E6D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ED8079DD-2B06-4030-9F0F-DC548F98E1C4}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "blazey.specifications.Tests", "tests\blazey.specifications.Tests\blazey.specifications.Tests.fsproj", "{05CA7922-58C9-4573-8C79-74E99494630D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blazey.specifications", "src\blazey.specifications\blazey.specifications.csproj", "{1292B08F-E191-4BDC-932D-E980D907EEED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blazey.specifications.specs", "tests\blazey.specifications.specs\blazey.specifications.specs.csproj", "{E85EA0AD-1718-47C2-8993-3DF7957181F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,14 +41,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F048B0A6-CEDE-40F4-B47F-F42BC5C11169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F048B0A6-CEDE-40F4-B47F-F42BC5C11169}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F048B0A6-CEDE-40F4-B47F-F42BC5C11169}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F048B0A6-CEDE-40F4-B47F-F42BC5C11169}.Release|Any CPU.Build.0 = Release|Any CPU
-		{05CA7922-58C9-4573-8C79-74E99494630D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05CA7922-58C9-4573-8C79-74E99494630D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05CA7922-58C9-4573-8C79-74E99494630D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05CA7922-58C9-4573-8C79-74E99494630D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1292B08F-E191-4BDC-932D-E980D907EEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1292B08F-E191-4BDC-932D-E980D907EEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1292B08F-E191-4BDC-932D-E980D907EEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1292B08F-E191-4BDC-932D-E980D907EEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E85EA0AD-1718-47C2-8993-3DF7957181F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E85EA0AD-1718-47C2-8993-3DF7957181F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E85EA0AD-1718-47C2-8993-3DF7957181F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E85EA0AD-1718-47C2-8993-3DF7957181F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +56,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{83F16175-43B1-4C90-A1EE-8E351C33435D} = {A6A6AF7D-D6E3-442D-9B1E-58CC91879BE1}
 		{8E6D5255-776D-4B61-85F9-73C37AA1FB9A} = {A6A6AF7D-D6E3-442D-9B1E-58CC91879BE1}
-		{05CA7922-58C9-4573-8C79-74E99494630D} = {ED8079DD-2B06-4030-9F0F-DC548F98E1C4}
+		{E85EA0AD-1718-47C2-8993-3DF7957181F2} = {ED8079DD-2B06-4030-9F0F-DC548F98E1C4}
 	EndGlobalSection
 EndGlobal
